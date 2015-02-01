@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.miexpense.expense.miexpense.ExpenseSubmission"
+    android:background="#cd6b9cce">
+
+    <TextView
+        android:id="@+id/txtDateDepense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Date :"
+        android:textColor="#ff3223ff" />
+
+    <EditText
+        android:id="@+id/DateDepense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtDateDepense"
+        android:background="#fff5fffc"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_alignRight="@+id/txtProductDescription"
+        android:layout_alignEnd="@+id/txtProductDescription"
+        android:layout_gravity="center" />
+
+
+    <TextView
+        android:id="@+id/lblProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product description :"
+        android:textColor="#ff3223ff"
+        android:layout_below="@+id/DateDepense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <EditText
+        android:id="@+id/txtProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:background="#fff5fffc"
+        android:layout_below="@+id/lblProductDescription"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/txtprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price :"
+        android:textColor="#ff3223ff"
+        android:layout_below="@+id/txtProductDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <EditText
+        android:id="@+id/txtProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="#fff5fffc"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/txtprice"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@drawable/submitdepense"
+        android:background="#ff666d8e"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/txtProductPrice"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageDelete"
+        android:src="@drawable/deletedepense"
+        android:background="#ff666d8e"
+        android:layout_toRightOf="@+id/imageButton"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/txtProductPrice"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagelisteAll"
+        android:src="@drawable/updatedepense"
+        android:background="#ff666d8e"
+        android:layout_toRightOf="@+id/imageDelete"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/txtProductPrice"/>
+
+</RelativeLayout>
